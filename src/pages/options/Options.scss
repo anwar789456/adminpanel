@@ -1,0 +1,232 @@
+.options {
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  
+
+  > button {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+
+  form {
+    position: fixed;
+    width: 97vw;
+    height: 95vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100000;
+    border: 3px solid ;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--card-bg);
+    overflow: auto;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    label {
+      font-weight: 500;
+      color: var(--text-color);
+    }
+
+    .close-button{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border: none;
+      color: var(--text-color);
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    input, select {
+      padding: 0.75rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: var(--normal-text-font);
+      outline: none;
+      background-color: var(--input-bg);
+      color: var(--text-color);
+      transition: border-color 0.2s ease;
+
+      &:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+      }
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--green-color);
+      color: var(--white-color);
+      border: none;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: var(--green-color);
+      }
+    }
+  }
+
+  .custom-options-row {
+    background: var(--background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: flex-start;
+
+      h4 {
+        width: 100%;
+        margin: 0 0 1rem;
+        color: var(--text-color);
+        font-size: var(--large-text-font);
+      }
+
+      input {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .option-plus-btn {
+        padding: 0.75rem 1.5rem;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        white-space: nowrap;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  .options-custom {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+
+    thead {
+      background-color: var(--background);
+
+      td {
+        padding: 1rem;
+        font-weight: 600;
+        color: var(--text-color);
+        border-bottom: 2px solid var(--border-color);
+
+        &:first-child {
+          border-top-left-radius: 8px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: var(--hover-bg);
+        }
+
+        td {
+          padding: 1rem;
+          border-bottom: 1px solid var(--border-color);
+          color: var(--text-color);
+
+          .icon-pencil,
+          .icon-delete {
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+              background-color: var(--border-color);
+            }
+          }
+
+          .icon-pencil {
+            color: var(--primary-color);
+          }
+
+          .icon-delete {
+            color: var(--danger-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .options {
+    padding: 1rem;
+
+    form {
+      padding: 1.5rem;
+    }
+
+    .custom-options-row > div {
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
+
+      .option-plus-btn {
+        width: 100%;
+      }
+    }
+
+    .options-custom {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}

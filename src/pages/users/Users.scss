@@ -1,0 +1,10 @@
+.users-page {
+  padding: 1rem;
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+}

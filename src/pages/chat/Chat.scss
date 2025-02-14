@@ -1,0 +1,71 @@
+.chat {
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.chat h2 {
+  font-size: var(--x-large-text-font);
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.chat-table-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scroll */
+}
+
+.chat-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: var(--card-bg);
+}
+
+.chat-table th,
+.chat-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid var(--border-color);
+  font-size: var(--normal-text-font);
+  width: fit-content;
+}
+
+.chat-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.chat-table tr:nth-child(even) {
+  background-color: var(--hover-bg);
+}
+
+.chat-table tr:hover {
+  background-color: var(--hover-bg);
+}
+
+.chat-table td span {
+  font-size: var(--small-text-font);
+  color: var(--text-secondary);
+}
+
+.chat-table td p {
+  margin: 5px 0;
+}
+
+.chat-table th:nth-child(1),
+.chat-table td:nth-child(1) {
+  min-width: 35px;
+}
+
+@media (max-width: 768px) {
+  .chat-table th, .chat-table td {
+    font-size: var(--small-text-font);
+    padding: 8px;
+    min-width: 35px;
+  }
+
+  .chat-table th:nth-child(1), .chat-table td:nth-child(1) {
+    min-width: 35px;
+  }
+}

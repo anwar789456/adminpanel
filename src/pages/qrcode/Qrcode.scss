@@ -1,0 +1,145 @@
+h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styling */
+input[type='text'] {
+  width: 60%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
+/* Button Styling */
+.container .button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.container .button:active {
+  transform: scale(0.98);
+}
+
+.container .button.cancel {
+  background-color: var(--danger-color);
+}
+
+.container .button.cancel:hover {
+  background-color: var(--danger-color-hover);
+}
+
+/* QR Code Section Styling */
+.qr-code-section {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.one-line{
+  margin-top: 2rem;
+}
+
+.button-qr{
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: var(--white-color);
+  font-size: var(--small-text-font);
+}
+
+.button-qr-cancel{
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: var(--danger-color);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: var(--white-color);
+  font-size: var(--large-text-font);
+}
+
+.qr-code {
+  display: inline-block;
+  padding: 1rem;
+  background-color: var(--background);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+}
+
+.download-buttons {
+  margin-top: 1rem;
+}
+
+.download-buttons .button {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 60%;
+  background: var(--background);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}

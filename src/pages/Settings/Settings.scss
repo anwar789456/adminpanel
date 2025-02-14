@@ -1,0 +1,54 @@
+.settings {
+  padding: 1rem;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    
+    @media (max-width: 768px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .settings-section {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    
+    @media (max-width: 768px) {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    h3 {
+      color: var(--text-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .color-picker {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      label {
+        color: var(--text-color);
+        min-width: 100px;
+      }
+
+      input[type="color"] {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}

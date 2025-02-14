@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar{
+  background-color: transparent;
+  /* display: none; */
+  width: 1px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: hsl(231, 13%, 80%);
+}
