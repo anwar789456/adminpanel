@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const API_BASE_URL_GET = 'http://localhost:3001/api/get-commande';
 
+// const API_BASE_URL_GET = 'https://www.samethome.com/api/get-commande';
 /**
  * Fetch all commande items.
  */

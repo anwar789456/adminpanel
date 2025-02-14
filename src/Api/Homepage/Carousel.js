@@ -5,6 +5,11 @@ const API_BASE_URL_ADD = 'http://localhost:3001/api/add-carousel';
 const API_BASE_URL_DEL = 'http://localhost:3001/api/delete-carousel/';
 const API_BASE_URL_UPD = 'http://localhost:3001/api/update-carouselaccueil/';
 
+// const API_BASE_URL_GET = 'https://www.samethome.com/api/get-carousel';
+// const API_BASE_URL_ADD = 'https://www.samethome.com/api/add-carousel';
+// const API_BASE_URL_DEL = 'https://www.samethome.com/api/delete-carousel/';
+// const API_BASE_URL_UPD = 'https://www.samethome.com/api/update-carouselaccueil/';
+
 /**
  * Fetch all carousel items.
  */

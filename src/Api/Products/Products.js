@@ -3,6 +3,12 @@ const API_BASE_URL_GET = 'http://localhost:3001/api/get-products';
 const API_BASE_URL_DEL = 'http://localhost:3001/api/delete-product/';
 const API_BASE_URL_UPDATE = 'http://localhost:3001/api/update-product/';
 const API_BASE_URL_ADD = 'http://localhost:3001/api/add-product';
+
+// const API_BASE_URL_GET = 'https://www.samethome.com/api/get-products';
+// const API_BASE_URL_DEL = 'https://www.samethome.com/api/delete-product/';
+// const API_BASE_URL_UPDATE = 'https://www.samethome.com/api/update-product/';
+// const API_BASE_URL_ADD = 'https://www.samethome.com/api/add-product';
+
 // Fetch all products
 export const FetchAllProductItems = async () => {
   try {

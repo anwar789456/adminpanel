@@ -5,6 +5,14 @@ const API_BASE_URL_ADD = 'http://localhost:3001/api/add-category';
 const API_BASE_URL_DEL = 'http://localhost:3001/api/delete-category/';
 const API_BASE_URL_UPD = 'http://localhost:3001/api/update-category/';
 
+
+// const API_BASE_URL_GET = 'https://www.samethome.com/api/get-category';
+// const API_BASE_URL_ADD = 'https://www.samethome.com/api/add-category';
+// const API_BASE_URL_DEL = 'https://www.samethome.com/api/delete-category/';
+// const API_BASE_URL_UPD = 'https://www.samethome.com/api/update-category/';
+
+
+
 /**
  * Fetch all Category items.
  */
